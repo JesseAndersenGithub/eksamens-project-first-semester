@@ -1,0 +1,19 @@
+body , ul {
+display: flex;
+margin: 0;
+padding: 0;
+
+}
+.headerlogo {width: 10%;}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+ul , li{
+    display: flex;
+    justify-content: space-between;
+    gap: 50%;
+}
