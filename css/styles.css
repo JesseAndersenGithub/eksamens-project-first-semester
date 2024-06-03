@@ -250,6 +250,22 @@ section {
 
     .burger-menu {
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        position: relative;
+    }
+
+
+    .burger-menu span {
+        height: 3px;
+        width: 25px;
+        background: white;
+        margin: 4px;
+        border-radius: 2px;
+        
+
     }
 
     nav ul {
@@ -258,6 +274,11 @@ section {
         align-items: center;
         width: 100%;
         background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 50px; /* Adjust this based on your header height */
+        left: 0;
+        padding: 0;
+        z-index: 100;
     }
 
     nav ul.show {
@@ -271,11 +292,16 @@ section {
     nav a {
         padding: 0.5rem 1rem;
         font-size: 1em;
+        width: 100%;
+        color: white;
+        text-decoration: none;
+        display: block;
     }
 
     .navimg {
         padding-left: 0;
         margin-bottom: 1rem;
+        display: none;
     }
 
     .image-section h1 {
@@ -328,7 +354,7 @@ section {
     }
 }
 
-@media  (max-width: 425px) {
+@media (max-width: 425px) {
     body {
         display: flex;
         flex-direction: column;
@@ -336,6 +362,10 @@ section {
 
     .burger-menu {
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
     }
 
     nav ul {
@@ -344,6 +374,11 @@ section {
         align-items: center;
         width: 100%;
         background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 50px; /* Adjust this based on your header height */
+        left: 0;
+        padding: 0;
+        z-index: 100;
     }
 
     nav ul.show {
@@ -351,12 +386,18 @@ section {
     }
 
     nav li {
+        width: 100%;
+        text-align: center;
         margin: 1rem 0;
     }
 
     nav a {
         padding: 0.5rem 1rem;
         font-size: 1em;
+        width: 100%;
+        color: white;
+        text-decoration: none;
+        display: block;
     }
 
     .navimg {
@@ -396,9 +437,8 @@ section {
 
     .text-overlay,
     .text-overlay-bottom {
-        font-size: 4px;
-        padding: 20px;
-        
+        font-size: 10px;
+        padding: 10px;
     }
 
     .footer-social-section {
