@@ -29,7 +29,7 @@
     align-items: center;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     max-height: var(--header-height);
-    padding: 0 20px;
+    
 }
 
 nav ul {
@@ -42,7 +42,7 @@ nav ul {
 
 nav li {
     height: 5rem;
-    position: relative;
+    
 }
 
 nav li:first-child {
@@ -57,12 +57,13 @@ nav a {
     display: flex;
     align-items: center;
     color: var(--primary-color);
-    padding: 0 1rem;
-    font-size: 1.2em;
+    padding: 0 2rem;
+    font-size: 1.5em;
 }
 
 .navimg {
-    width: 8rem;
+    width: 10rem;
+    padding-left: 50px;
 }
 
 .burger-menu {
@@ -147,11 +148,18 @@ nav a {
 h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color: white;
 }
 
 h2 {
     font-size: 2rem;
     margin-top: 20px;
+    color: white;
+}
+
+h3{
+    font-size: 2rem;
+    color: white;
 }
 
 article {
@@ -165,6 +173,7 @@ p {
     margin: 10px 0;
     text-align: justify;
     line-height: 1.5;
+    color: white;
 }
 
 /* footer css */
