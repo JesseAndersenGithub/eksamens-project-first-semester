@@ -29,7 +29,6 @@
     align-items: center;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     max-height: var(--header-height);
-    
 }
 
 nav ul {
@@ -42,7 +41,6 @@ nav ul {
 
 nav li {
     height: 5rem;
-    
 }
 
 nav li:first-child {
@@ -121,13 +119,14 @@ nav a {
     }
 }
 
+/* Gradient baggrund for produktside */
 .gradient-background {
-    min-height: 100vh; /* Full height */
-    width: 100%; /* Full width */
+    min-height: 100vh; /* Fulde højde */
+    width: 100%; /* Fuld bredde */
     display: flex; /* Flexbox */
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
-    background: linear-gradient(to top, rgb(175, 1, 175), rgb(36, 36, 36)); /* Example background */
+    align-items: center; /* Centrerer indhold lodret */
+    justify-content: center; /* Centrerer indhold vandret */
+    background: linear-gradient(to top, rgb(175, 1, 175), rgb(36, 36, 36)); /* Eksempel baggrund */
     padding: 20px; /* Padding */
 }
 
@@ -144,6 +143,7 @@ nav a {
     object-fit: contain;
 }
 
+/* Tekststørrelser og farver */
 h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -160,6 +160,7 @@ article {
     width: 100%;
     max-width: 800px;
     padding: 20px;
+    padding-right: 200px;   
 }
 
 p {
@@ -170,12 +171,12 @@ p {
     color: rgb(255, 255, 255);
 }
 
-h3{
+h3 {
     color: rgb(255, 255, 255);
     font-size: 2rem;
 }
 
-/* footer css */
+/* Footer stil */
 .footer {
     background: var(--footer-bg);
     color: var(--primary-color);
@@ -213,9 +214,10 @@ h3{
 
 /* Flexbox for desktop */
 .gradient-background {
-    flex-direction: row; /* Row layout for desktop */
+    flex-direction: row; /* Rækkefølgelayout for desktop */
 }
 
+/* Responsive styles */
 @media (max-width: 768px) {
     .burger-menu {
         display: flex;
@@ -253,7 +255,7 @@ h3{
 
     .gradient-background {
         padding: 10px;
-        flex-direction: column; /* Column layout for mobile */
+        flex-direction: column; /* Søjlelayout for mobil */
     }
 
     h1 {
@@ -383,11 +385,10 @@ h3{
         background-color: var(--secondary-color);
         box-shadow: none;
         display: none;
-        width: 100%; /* Make dropdown full width in mobile view */
+        width: 100%; /* Gør dropdown fuld bredde i mobilvisning */
     }
 
     .dropdown.show .dropdown-content {
         display: block;
     }
 }
-

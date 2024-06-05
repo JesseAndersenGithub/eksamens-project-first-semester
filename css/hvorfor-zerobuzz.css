@@ -1,27 +1,27 @@
 :root {
-    --primary-font: 'Roboto', sans-serif;
-    --primary-color: white;
-    --secondary-color: rgba(0, 0, 0, 0.5);
-    --footer-bg: rgba(0, 0, 0, 0.8);
-    --header-height: 100px;
+    --primary-font: 'Roboto', sans-serif; /* Primær font */
+    --primary-color: white; /* Primær farve */
+    --secondary-color: rgba(0, 0, 0, 0.5); /* Sekundær farve til baggrunde */
+    --footer-bg: rgba(0, 0, 0, 0.8); /* Baggrundsfarve til footer */
+    --header-height: 100px; /* Højde på header */
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--primary-font);
+    font-family: var(--primary-font); /* Anvend primær font */
 }
 
 body {
-    min-height: 100vh;
+    min-height: 100vh; /* Minimum højde på body */
     margin: 0;
     padding: 0;
-    background-image: url('/img/hvorfor-zerobuzz/background-hvorfor-zerobuzz.webp'); /* Relative path to the image */
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-position: center; /* Centers the image */
-    color: var(--primary-color); /* Ensures text is readable */
+    background-image: url('/img/hvorfor-zerobuzz/background-hvorfor-zerobuzz.webp'); /* Baggrundsbillede */
+    background-size: cover; /* Sikrer at billedet dækker hele baggrunden */
+    background-repeat: no-repeat; /* Forhindrer gentagelse af billedet */
+    background-position: center; /* Centrerer billedet */
+    color: var(--primary-color); /* Sikrer læsbar tekstfarve */
 }
 
 /* Navigationsbar start */
@@ -30,8 +30,8 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: var(--secondary-color);
-    z-index: 10;
+    background: var(--secondary-color); /* Sekundær baggrundsfarve */
+    z-index: 10; /* Sikrer at header er øverst */
 }
 
 .navbar {
@@ -39,13 +39,13 @@ body {
     justify-content: space-between;
     align-items: center;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-    max-height: var(--header-height);
-    padding: 0 20px;
+    max-height: var(--header-height); /* Maksimal højde på navbar */
+    padding: 0 20px; /* Indvendig margin */
 }
 
 nav ul {
     width: 100%;
-    list-style: none;
+    list-style: none; /* Fjern punkttegn */
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -63,10 +63,10 @@ nav li:first-child {
 
 nav a {
     height: 5rem;
-    text-decoration: none;
+    text-decoration: none; /* Fjern understregning */
     display: flex;
     align-items: center;
-    color: var(--primary-color);
+    color: var(--primary-color); /* Primær tekstfarve */
     padding: 0 2rem;
     font-size: 1.5rem;
 }
@@ -76,6 +76,7 @@ nav a {
     padding-left: 50px;
 }
 
+/* Burger-menu til mobilvisning */
 .burger-menu {
     display: none;
     flex-direction: column;
@@ -92,7 +93,7 @@ nav a {
     border-radius: 2px;
 }
 
-/* Dropdown menu */
+/* Dropdown-menu */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -121,25 +122,25 @@ nav a {
 
 /* Navigation slut */
 
-/* Main content */
+/* Hovedindhold */
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    min-height: calc(100vh - var(--header-height) - 40px); /* Adjust to fill the viewport minus header and footer */
+    min-height: calc(100vh - var(--header-height) - 40px); /* Juster for at fylde viewport minus header og footer */
 }
 
 main h1 {
     font-size: 2.5rem;
     margin-top: var(--header-height);
-    background: rgba(0, 0, 0, 0.5); /* Add background to h1 for readability */
+    background: rgba(0, 0, 0, 0.5); /* Tilføj baggrund til h1 for læsbarhed */
     padding: 1rem;
     border-radius: 10px;
 }
 
-article{
+article {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -148,13 +149,13 @@ article{
 main p {
     max-width: 800px;
     margin: 20px;
-    background: rgba(0, 0, 0, 0.5); /* Add background to p for readability */
+    background: rgba(0, 0, 0, 0.5); /* Tilføj baggrund til p for læsbarhed */
     padding: 1rem;
     border-radius: 10px;
     font-size: 2rem;
 }
 
-/* footer */
+/* Footer */
 .footer {
     background: var(--footer-bg);
     color: white;
@@ -228,15 +229,14 @@ main p {
     }
 
     main h1 {
-        font-size: 4rem;
+        font-size: 1rem;
         padding: 0.5rem;
     }
 
     article p {
-        padding: 0.5rem;
-        font-size: 1.5rem;
+        padding: 0.3rem;
+        font-size: 1rem;
         line-height: 2rem;
-        line-break: normal;
     }
 
     .footer-social-section {

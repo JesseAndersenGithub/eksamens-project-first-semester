@@ -6,11 +6,24 @@
     --header-height: 100px;
 }
 
+/* Grundlæggende indstillinger for alle elementer */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: var(--primary-font);
+}
+
+/* Kroppens grundindstillinger */
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('/img/hvorfor-zerobuzz/background-hvorfor-zerobuzz.webp'); /* Baggrundsbillede */
+    background-size: cover; /* Fyld hele baggrunden */
+    background-repeat: no-repeat; /* Undgå gentagelse af billedet */
+    background-position: center; /* Center billedet */
+    color: var(--primary-color); /* Sørg for at tekst er læselig */
 }
 
 /* Navigationsbar start */
@@ -29,7 +42,6 @@
     align-items: center;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     max-height: var(--header-height);
-    
 }
 
 nav ul {
@@ -42,7 +54,6 @@ nav ul {
 
 nav li {
     height: 5rem;
-    
 }
 
 nav li:first-child {
@@ -66,6 +77,7 @@ nav a {
     padding-left: 50px;
 }
 
+/* Burger-menu til mobilvisning */
 .burger-menu {
     display: none;
     flex-direction: column;
@@ -108,7 +120,7 @@ nav a {
     display: block;
 }
 
-/* Mobile dropdown styles */
+/* Mobil dropdown-stilarter */
 @media (max-width: 768px) {
     .dropdown-content {
         position: relative;
@@ -122,16 +134,18 @@ nav a {
     }
 }
 
+/* Gradient baggrund */
 .gradient-background {
-    min-height: 100vh; /* Full height */
-    width: 100%; /* Full width */
+    min-height: 100vh; /* Fuld højde */
+    width: 100%; /* Fuld bredde */
     display: flex; /* Flexbox */
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
-    background: linear-gradient(to top, yellow, black); /* Example background */
-    padding: 20px; /* Padding */
+    align-items: center; /* Centrer indhold lodret */
+    justify-content: center; /* Centrer indhold vandret */
+    background: linear-gradient(to top, yellow, black); /* Eksempel på baggrund */
+    padding: 20px; /* Polstring */
 }
 
+/* Billedcontainer */
 .img-container {
     width: 100%;
     display: flex;
@@ -139,12 +153,14 @@ nav a {
     padding: 20px;
 }
 
+/* Produktbillede */
 .produkt-img {
     max-width: 100%;
     height: auto;
     object-fit: contain;
 }
 
+/* Overskrifter */
 h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -157,15 +173,17 @@ h2 {
     color: white;
 }
 
-h3{
+h3 {
     font-size: 2rem;
     color: white;
 }
 
+/* Artikelindhold */
 article {
     width: 100%;
     max-width: 800px;
     padding: 20px;
+    padding-right: 200px;
 }
 
 p {
@@ -176,7 +194,7 @@ p {
     color: white;
 }
 
-/* footer css */
+/* Footer */
 .footer {
     background: var(--footer-bg);
     color: var(--primary-color);
@@ -212,11 +230,12 @@ p {
     justify-content: center;
 }
 
-/* Flexbox for desktop */
+/* Flexbox til desktop */
 .gradient-background {
-    flex-direction: row; /* Row layout for desktop */
+    flex-direction: row; /* Rækkes layout til desktop */
 }
 
+/* Responsive stilarter */
 @media (max-width: 768px) {
     .burger-menu {
         display: flex;
@@ -254,7 +273,7 @@ p {
 
     .gradient-background {
         padding: 10px;
-        flex-direction: column; /* Column layout for mobile */
+        flex-direction: column; /* Kolonnelayout til mobil */
     }
 
     h1 {
@@ -343,7 +362,7 @@ p {
     display: block;
 }
 
-/* Mobile dropdown styles */
+/* Mobile dropdown-stilarter */
 @media (max-width: 768px) {
     .burger-menu {
         display: flex;
@@ -384,11 +403,11 @@ p {
         background-color: var(--secondary-color);
         box-shadow: none;
         display: none;
-        width: 100%; /* Make dropdown full width in mobile view */
+        width: 100%; /* Gør dropdown fuld bredde i mobilvisning */
     }
 
     .dropdown.show .dropdown-content {
         display: block;
     }
 }
-
+    
