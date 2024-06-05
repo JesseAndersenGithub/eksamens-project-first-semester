@@ -17,13 +17,7 @@
 /* Kroppens grundindstillinger */
 body {
     min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    background-image: url('/img/hvorfor-zerobuzz/background-hvorfor-zerobuzz.webp'); /* Baggrundsbillede */
-    background-size: cover; /* Fyld hele baggrunden */
-    background-repeat: no-repeat; /* Undgå gentagelse af billedet */
-    background-position: center; /* Center billedet */
-    color: var(--primary-color); /* Sørg for at tekst er læselig */
+ 
 }
 
 /* Navigationsbar start */

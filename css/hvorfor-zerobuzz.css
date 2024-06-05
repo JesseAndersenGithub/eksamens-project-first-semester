@@ -17,7 +17,7 @@ body {
     min-height: 100vh; /* Minimum højde på body */
     margin: 0;
     padding: 0;
-    background-image: url('/img/hvorfor-zerobuzz/background-hvorfor-zerobuzz.webp'); /* Baggrundsbillede */
+    background-image: url(/img/hvorfor-zerobuzz/background-hvorfor-zerobuzz.webp); /* Baggrundsbillede */
     background-size: cover; /* Sikrer at billedet dækker hele baggrunden */
     background-repeat: no-repeat; /* Forhindrer gentagelse af billedet */
     background-position: center; /* Centrerer billedet */
